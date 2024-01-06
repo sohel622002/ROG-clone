@@ -194,6 +194,21 @@
     max-width: 550px;
 }
 
+.product-links{
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    top: 100%;
+    left: 0%;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.products-link-tab:hover .product-links{
+    display: block;
+}
+
 @media (max-width:800px){
     .story-container{
         position: inherit;
