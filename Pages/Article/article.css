@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.site-logo{
+   width: 200px;
+}
+
+.product-links{
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    top: 100%;
+    left: 0%;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.desktop-navigation li{
+    cursor: pointer;
+}
+
+.desktop-navigation li:hover{
+    color: red;
+}
+
+.products-link-tab:hover .product-links{
+    display: block;
+}
+
+/* Header Styles Closes... */
+
+.article-card-wrapper{
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+.card{
+    width: 100% !important;
+    color: white;
+    background-color: rgba(0, 0, 0, .15);
+    border-radius: 0;
+    border: 1px solid rgba(255, 255, 255, .15);
+    cursor: pointer;
+}
+
+.card-body{
+    padding: 15px;
+}
+
+.card > img{
+    border-radius: 0;
+}
+
+.card-text{
+    color: rgba(255, 255, 255, .35);
+}
+
+.article-card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.article-arrow{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, .35);
+}
+
+@media (max-width:1000px) {
+    .article-card-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:500px) {
+    .article-card-wrapper{
+        grid-template-columns: 1fr;
+    }
+}
