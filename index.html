@@ -19,12 +19,26 @@
     <title>ROG | Phones</title>
   </head>
   <body>
-    <!-- <div
-      class="mobile-navigation d-block d-lg-none w-100 bg-white position-fixed"
+    <div
+      class="mobile-navigation d-flex d-lg-none w-100 bg-white position-fixed flex-column"
       style="inset: 0; z-index: 10000000"
     >
-      <h1>This is Mobile Navigation</h1>
-    </div> -->
+      <div class="p-3 fs-3">
+        <span class="cross-icon">
+          <i class="fa-solid fa-xmark"></i>
+        </span>
+      </div>
+      <div class="mobile-links">
+        <ul>
+          <li><a href="/">HOME</a></li>
+          <li><a href="/Pages/Laptop/laptop.html">LAPTOPS</a></li>
+          <li><a href="/Pages/Mobile/mobile.html">MOBILES</a></li>
+          <li><a href="/Pages/Wallpapers/wallpaper.html">WALLPAPERS</a></li>
+          <li><a href="/Pages/Article/article.html">ARTICLES</a></li>
+        </ul>
+      </div>
+    </div>
+
     <header
       class="d-flex align-items-center justify-content-between bg-black text-white"
     >
@@ -35,7 +49,7 @@
           id="m-navigation"
           class="d-none"
         />
-        <label for="m-navigation">
+        <label for="m-navigation" class="navigation-bars">
           <i class="fa-solid fa-bars"></i>
         </label>
       </div>
@@ -65,8 +79,34 @@
           Products
           <div class="product-links">
             <ul class="list-group">
-              <li class="list-group-item"><a href="/Pages/Laptop/laptop.html" class="text-decoration-none text-dark">Laptops</a></li>
-              <li class="list-group-item"><a href="/Pages/Article/article.html" class="text-decoration-none text-dark">Articles</a></li>
+              <li class="list-group-item">
+                <a
+                  href="/Pages/Laptop/laptop.html"
+                  class="text-decoration-none text-dark"
+                  >Laptops</a
+                >
+              </li>
+              <li class="list-group-item">
+                <a
+                  href="/Pages/Article/article.html"
+                  class="text-decoration-none text-dark"
+                  >Articles</a
+                >
+              </li>
+              <li class="list-group-item">
+                <a
+                  href="/Pages/Mobile/mobile.html"
+                  class="text-decoration-none text-dark"
+                  >Mobiles</a
+                >
+              </li>
+              <li class="list-group-item">
+                <a
+                  href="/Pages/Wallpapers/wallpaper.html"
+                  class="text-decoration-none text-dark"
+                  >Wallpaper</a
+                >
+              </li>
             </ul>
           </div>
         </li>
@@ -585,5 +625,6 @@
         productSlider.style.transform = `translateX(-${sliderCounter}%)`;
       });
     </script>
+    <script src="script.js"></script>
   </body>
 </html>

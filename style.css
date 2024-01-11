@@ -209,6 +209,34 @@
     display: block;
 }
 
+.mobile-navigation{
+    transform: translateX(-101%);
+    transition: all .3s ease-in-out;
+}
+
+.mobile-links{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-navigation ul{
+    list-style: none;
+}
+
+.mobile-navigation li{
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.mobile-navigation li a{
+    text-decoration: none;
+    color: inherit;
+}
+
 @media (max-width:800px){
     .story-container{
         position: inherit;
